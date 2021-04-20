@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import CounterControls from "./components/CounterControls";
+import CounterDisplay from "./components/CounterDisplay";
+
 
 function App() {
   return (
     <div className="App">
-  
-    </div>
+      <CounterDisplay />
+      <CounterControls />
+      </div>
   );
 }
 
