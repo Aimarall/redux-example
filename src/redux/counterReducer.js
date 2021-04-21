@@ -1,3 +1,42 @@
+// const intialState = {
+//     number: 0,
+// }
+// const counterReduce = (state = intialState, action) => {
+//     const newState = { ...state };
+
+//     switch (action.type) {
+//         case "increment_by_1":
+//             newState.number++;
+//             return newState;
+
+//         case "increment_by_10":
+//             newState.number += 10;
+//             return newState;
+
+//         case "increment_by_10":
+//             newState.number -= 10;
+//             return newState;
+
+//         case "increment_by_2":
+//             newState.number *= 10;
+//             return newState;
+
+//         case "increment_by_2":
+//             newState.number /= 10;
+//             return newState;
+
+
+
+//         default:
+//             break;
+//     }
+//     return state;
+// }
+// export default counterReduce
+
+
+
+
 const intialState = {
     number: 0,
 }
@@ -13,23 +52,29 @@ const counterReduce = (state = intialState, action) => {
             newState.number += 10;
             return newState;
 
-        case "increment_by_10":
-            newState.number -= 10;
+        case "decrease_by_1":
+            newState.number--;
             return newState;
 
-        case "increment_by_2":
-            newState.number *= 10;
+        case "multiplication_by_2":
+            newState.number *= 2;
             return newState;
 
-        case "increment_by_2":
-            newState.number /= 10;
+        case "division_by_2":
+            newState.number /= 2;
             return newState;
 
-      
+        case "reset_by_2":
+            newState.number = 0;
+            return newState;
+
+        case "random_by_2":
+            newState.number = Math.floor(Math.random() * 100) + 1;
+            return newState;
 
         default:
             break;
     }
     return state;
 }
-export default counterReduce
+export default counterReduce;
