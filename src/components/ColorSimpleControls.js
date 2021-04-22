@@ -9,7 +9,7 @@ const ColorSimpleControls = () => {
     return (
         <div>
             <h2>Simple controls</h2>
-            <input type="color" onClick={changeColorCallback} />
+            <input type="color" onChange={changeColorCallback} />
         </div>
     );
 }
