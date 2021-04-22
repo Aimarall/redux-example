@@ -1,13 +1,14 @@
-import CounterControls from "./components/CounterControls";
-import CounterDisplay from "./components/CounterDisplay";
-
+import ColorDisplay from "./components/ColorDisplay";
+import ColorSimpleControls from "./components/ColorSimpleControls";
 
 function App() {
   return (
     <div className="App">
-      <CounterDisplay />
-      <CounterControls />
-      </div>
+      <ColorDisplay />
+      <ColorSimpleControls />
+
+
+    </div>
   );
 }
 
